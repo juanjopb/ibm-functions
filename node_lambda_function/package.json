@@ -1,0 +1,16 @@
+{
+  "name": "prueba-js",
+  "version": "0.0.0",
+  "description": "NightWatch examples running with selenium",
+  "main": "dist/bundle.js",
+  "scripts": {
+    "build": "webpack --config webpack.config.js",
+    "deploy": "ibmcloud fn action update prueba-js dist/bundle.js --kind nodejs:10"
+  },
+  "devDependencies": {
+    "webpack": "^3.8.1",
+    "chromedriver": "^86.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7"
+  },
+  "dependencies": {}
+}
